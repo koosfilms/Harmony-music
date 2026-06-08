@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <!-- Left Column: Quick Service Switchers -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingEnd="10dp"
+        android:layout_marginEnd="6dp"
+        style="@android:style/Widget">
+
+        <TextView
+            android:id="@+id/widget_switch_spotify"
+            android:layout_width="34dp"
+            android:layout_height="24dp"
+            android:background="#331DB954"
+            android:text="SP"
+            android:textColor="#1DB954"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/widget_switch_yt"
+            android:layout_width="34dp"
+            android:layout_height="24dp"
+            android:background="#33FF0000"
+            android:text="YT"
+            android:textColor="#FF0000"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/widget_switch_tidal"
+            android:layout_width="34dp"
+            android:layout_height="24dp"
+            android:background="#3300D2FF"
+            android:text="TD"
+            android:textColor="#00D2FF"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Middle Column: Track & Account Service Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:id="@+id/widget_service_icon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_music_note"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/widget_service_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spotify"
+                android:textColor="#8A939E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/widget_track_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blinding Lights"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/widget_track_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Weeknd"
+            android:textColor="#A1A8B3"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <!-- Right Column: Media Controls -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="4dp">
+
+        <ImageView
+            android:id="@+id/widget_btn_prev"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_skip_previous"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="4dp"
+            android:layout_marginEnd="6dp" />
+
+        <ImageView
+            android:id="@+id/widget_btn_play_pause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_play_arrow"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="4dp"
+            android:layout_marginEnd="6dp" />
+
+        <ImageView
+            android:id="@+id/widget_btn_next"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_skip_next"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="4dp" />
+    </LinearLayout>
+</LinearLayout>

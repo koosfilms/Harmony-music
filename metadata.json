@@ -1,0 +1,6 @@
+{
+  "name": "Harmony Music",
+  "description": "A premium unified music switcher and player combining Spotify, YouTube Music, and Tidal. Log into your accounts seamlessly and control your music with a native home screen widget.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
